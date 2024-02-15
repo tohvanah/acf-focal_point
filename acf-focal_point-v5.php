@@ -29,14 +29,14 @@ class acf_field_focal_point extends acf_field {
 		*  label (string) Multiple words, can include spaces, visible when selecting a field type
 		*/
 		
-		$this->label = __('Focal Point', 'acf-focal_point');
+		$this->label = __('Image Focal Point', 'acf-focal_point');
 		
 		
 		/*
 		*  category (string) basic | content | choice | relational | jquery | layout | CUSTOM GROUP NAME
 		*/
 		
-		$this->category = 'jquery';
+		$this->category = 'content';
 		
 		
 		/*

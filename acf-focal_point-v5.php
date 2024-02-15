@@ -189,7 +189,7 @@ class acf_field_focal_point extends acf_field {
 			<path class="components-focal-point-picker__icon-fill" d="M15 3C8.4 3 3 8.4 3 15s5.4 12 12 12 12-5.4 12-12S21.6 3 15 3zm0 22C9.5 25 5 20.5 5 15S9.5 5 15 5s10 4.5 10 10-4.5 10-10 10z"></path>
 		</svg>
 		<span class="acf-button-delete acf-icon -cancel acf-icon-cancel dark" data-name="remove"></span>
-		<img class="acf-focal_point-image" src="<?php echo $url; ?>" />
+		<img class="acf-focal_point-image" data-src="<?php echo $url; ?>" />
 	</div>
 
 	<div class="clear"></div>
@@ -222,12 +222,12 @@ class acf_field_focal_point extends acf_field {
 		
 		
 		// register & include JS
-		wp_register_script( 'acf-input-focal_point', "{$dir}js/input.js", array('acf-input') );
+		wp_register_script( 'acf-input-focal_point', "{$dir}js/input.js", array('acf-input'), acf_focal_point );
 		wp_enqueue_script('acf-input-focal_point');
 		
 		
 		// register & include CSS
-		wp_register_style( 'acf-input-focal_point', "{$dir}css/input.css", array('acf-input') ); 
+		wp_register_style( 'acf-input-focal_point', "{$dir}css/input.css", array('acf-input'), acf_focal_point ); 
 		wp_enqueue_style('acf-input-focal_point');
 		
 		

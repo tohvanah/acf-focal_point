@@ -6,6 +6,9 @@
 	position: relative;
 	cursor: crosshair;
 }
+.acf-focal_point .has-image::selection {
+	background-color: transparent;
+}
 .acf-focal_point.active .has-image {
 	display: inline-block;
 }

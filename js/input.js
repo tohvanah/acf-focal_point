@@ -40,6 +40,10 @@
 		$img.on("load", function(e){
 			icon.style.left = (values.left * 100) + "%";
 			icon.style.top = (values.top * 100) + "%";
+		}).attr('src',function(){
+			if ( this.dataset.src && this.dataset.src.length ) {
+				return this.dataset.src;
+			}
 		});
 
 		// When we click the add image button...
